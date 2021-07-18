@@ -82,6 +82,9 @@ function pratice(str, type){
   let toast = setToast(toastPosition, type);
   let toastText = setToastText(str);
   let timeBar = setTimeBar();
+  let icon = document.createElement('img');
+  icon.src = './img/tick.svg';
+  icon.style.width="30px";
 
   let timeBarAni = timeBar.animate([
     {width:"100%"},
@@ -109,6 +112,7 @@ function pratice(str, type){
     }
   }
   
+  toast.append(icon);
   toast.append(toastText);
   toast.append(timeBar);
   body.append(toast);
