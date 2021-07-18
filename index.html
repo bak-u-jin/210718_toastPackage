@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 100vh;
+    }
+  </style>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <div style="background: #aaa;"></div>
+  <div style="background: #0f0;"></div>
+  <div style="background: #00f;"></div>
+  <button id="hello" style="position: absolute; left: 50px; top: 50px;">aa</button>
+  <script type="module">
+    import pratice from "./Main.js";
+    document.querySelector("button").addEventListener('click',()=>{pratice("Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eum, numquam rerum iusto, tenetur sed ducimus praesentium ex eligendi, in odit. Magni consequuntur praesentium iste error! Voluptates eligendi qui non.", "warning")});
+  </script>
+</body>
+</html>
